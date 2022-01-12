@@ -12,9 +12,6 @@ from sklearn import metrics
 from sklearn.metrics import classification_report
 
 df = pd.read_csv('winequality/winequality-red.csv', sep=';')
-print(df.head())
-print(df.columns)
-# print(df.axes)
 
 if (df.isnull().values.any()):
     print("Missing Values Found")  # check for missing values
@@ -22,10 +19,8 @@ else:
     print("No Missing Values Found")
 
 X = df.drop(columns='quality')
-print(X.head())
-
 Y = df['quality']
-print(Y.head())
+
 # fig = px.histogram(Y, x='quality')
 # fig.show()
 train_X, test_X, train_Y, test_Y = train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=88)
@@ -34,6 +29,7 @@ train_X, test_X, train_Y, test_Y = train_test_split(X, Y, test_size=0.2, stratif
 # fig.show()
 # fig = px.histogram(test_Y, x='quality')
 # fig.show()
+
 ###########################
 # model = LinearSVC(max_iter=20000, dual=False) #0.56 accuracy
 # model = KNeighborsClassifier()# 0.50 accuracy
