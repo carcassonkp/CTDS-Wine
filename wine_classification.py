@@ -38,11 +38,23 @@ train_X, test_X, train_Y, test_Y = train_test_split(X, Y, test_size=0.2, stratif
 # model = LinearSVC(max_iter=20000, dual=False) #0.56 accuracy
 # model = KNeighborsClassifier()# 0.50 accuracy
 # model = DecisionTreeClassifier()  # 0.60 accuracy
-model = RandomForestClassifier() # 0.71 accuracy
+# model = RandomForestClassifier() # 0.71 accuracy
 # model = AdaBoostClassifier()  # 0.51 accuracy
-# model = MLPClassifier()  # 0.59 accuracy
+model = MLPClassifier()  # 0.59 accuracy
 
 model.fit(train_X, train_Y)
 predict_Y = model.predict(test_X)
 ###########################
 print(classification_report(test_Y, predict_Y))
+
+mse = metrics.mean_squared_error(test_Y, predict_Y)
+print("Mean Squared Error:", mse)
+
+mae = metrics.mean_absolute_error(test_Y, predict_Y)
+print("Mean Absolute Error:", mae)
+
+mape = metrics.mean_absolute_percentage_error(test_Y, predict_Y)
+print("Mean Absolute Percentage Error:", mape)
+
+mdae = metrics.median_absolute_error(test_Y, predict_Y)
+print("Median Absolute Error:", mdae)
