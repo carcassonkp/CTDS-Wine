@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def import_winedata():
-    df = pd.read_csv('../winequality/winequality-red.csv', sep=';')
+    df = pd.read_csv('../wine_quality/winequality-red.csv', sep=';')
     if df.isnull().values.any():
         print("Missing Values Found")  # check for missing values
     else:
