@@ -1,0 +1,6 @@
+No Missing Values Found
+Mean Squared Error: 0.42738759236066437
+Mean Absolute Error: 0.4871953504547628
+Mean Absolute Percentage Error: 0.08951874773448468
+Median Absolute Error: 0.383026688650574
+R2 Score : 0.3376643644026268

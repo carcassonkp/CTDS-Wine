@@ -1,29 +1,25 @@
-from sklearn.model_selection import train_test_split
-from sklearn.svm import LinearSVC
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-
-
-from sklearn.neural_network import MLPClassifier
-from sklearn import metrics
 from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn import metrics
 from winedata import import_winedata
+import matplotlib.pyplot as plt
+import sys
+
+sys.stdout = open('logs/Ada_Boost.txt', 'wt')
 
 features, labels = import_winedata()
 
 train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size=0.2,
-                                                                            stratify=labels, random_state=88)
-
-###########################
-
-# model = AdaBoostClassifier()  # 0.51 accuracy
-model = MLPClassifier()  # 0.59 accuracy
-
+                                                                            stratify=labels, random_state=0)
+# ###########################
+model = AdaBoostClassifier()
 model.fit(train_features, train_labels)
 predictions = model.predict(test_features)
-###########################
-print(classification_report(test_labels, predictions))
 
+# ###########################
+print(classification_report(test_labels, predictions, zero_division=1))
+#
 mse = metrics.mean_squared_error(test_labels, predictions)
 print("Mean Squared Error:", mse)
 
