@@ -14,7 +14,6 @@ train_features, test_features, train_labels, test_labels = train_test_split(feat
 model = SGDRegressor()
 model.fit(train_features, train_labels)
 predict_Y = model.predict(test_features)
-
 ##########################
 mse = metrics.mean_squared_error(test_labels, predict_Y)
 print("Mean Squared Error:", mse)

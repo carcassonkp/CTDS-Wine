@@ -10,11 +10,10 @@ sys.stdout = open('logs/AdaBoost.txt', 'wt')
 features, labels = import_winedata()
 train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size=0.2,
                                                                             stratify=labels, random_state=0)
-####################
+##########################
 model = AdaBoostRegressor()
 model.fit(train_features, train_labels)
 predict_Y = model.predict(test_features)
-
 ##########################
 mse = metrics.mean_squared_error(test_labels, predict_Y)
 print("Mean Squared Error:", mse)
