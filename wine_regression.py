@@ -21,7 +21,7 @@ else:
 X = df.drop(columns='quality')
 Y = df['quality']
 
-train_X, test_X, train_Y, test_Y = train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=88)
+train_X, test_X, train_Y, test_Y = train_test_split(train, Y, test_size=0.2, stratify=Y, random_state=88)
 
 ####################
 # model = LinearSVR(max_iter=20000)

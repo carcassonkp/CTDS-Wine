@@ -1,0 +1,18 @@
+No Missing Values Found
+              precision    recall  f1-score   support
+
+           3       1.00      0.00      0.00         2
+           4       1.00      0.00      0.00        11
+           5       0.55      0.71      0.62       136
+           6       0.51      0.55      0.53       128
+           7       0.57      0.10      0.17        40
+           8       1.00      0.00      0.00         3
+
+    accuracy                           0.53       320
+   macro avg       0.77      0.23      0.22       320
+weighted avg       0.56      0.53      0.50       320
+
+Mean Squared Error: 0.728125
+Mean Absolute Error: 0.546875
+Mean Absolute Percentage Error: 0.0970610119047619
+Median Absolute Error: 0.0
