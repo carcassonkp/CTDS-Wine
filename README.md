@@ -14,3 +14,11 @@ Using the wine quality dataset do the classification, regression, clustering and
 
 ## Clustering Graphs
 ![Clustering](https://user-images.githubusercontent.com/70576587/149420560-79f21de9-d266-41d7-91f6-22fc08f28648.png)
+```
+K means
+  accuracy                           0.07      1599
+Mean shift
+  accuracy                           0.00      1599
+Gaussian mixture
+  accuracy                           0.20      1599
+```
