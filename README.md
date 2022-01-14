@@ -48,3 +48,10 @@ Mean shift
 Gaussian mixture
   accuracy                           0.20      1599
 ```
+## Dimensionality Reduction
+
+### PCA
+
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/70576587/149518888-63f82207-f68e-43e1-86d0-dfa15b6a5c57.png"> 
+</p>
