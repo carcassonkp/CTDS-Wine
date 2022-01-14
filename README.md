@@ -24,6 +24,19 @@ Before SMOTE
 After SMOTE 
 ![newplot(1)](https://user-images.githubusercontent.com/70576587/149510178-880e9211-9a0c-473d-a581-54f9fc468648.png)
 
+## Regression
+
+### R2 Score
+
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/70576587/149511454-0a1c2308-5232-4ff9-af19-c7ce9961d118.png"> 
+</p>
+
+### MSE
+
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/70576587/149512229-a5f06f02-af6d-4c3b-ba7e-a8009037fc5a.png"> 
+</p>
 
 ## Clustering Graphs
 ![Clustering](https://user-images.githubusercontent.com/70576587/149420560-79f21de9-d266-41d7-91f6-22fc08f28648.png)
