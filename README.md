@@ -12,6 +12,19 @@ Using the wine quality dataset do the classification, regression, clustering and
     <img width="50%" src="https://user-images.githubusercontent.com/70576587/149364232-b8a89079-cf71-40b9-8d34-4c11c604d771.png"> 
 </p>
 
+### Train set
+Since the model was having difficulties predicting classes with a low number of samples SMOTE was used with the Random Forest classification, but it's accuracy was worse than the normal Random Forest classification with the original train set.
+
+Create a new training set using SMOTE(Synthetic Minority Over-Sampling).
+The algorithm creates synthetic minority class samples to increase the representation of minority classes.
+
+Before SMOTE
+![newplot](https://user-images.githubusercontent.com/70576587/149509975-1ee7f439-514d-43a0-af01-31efa47bf03b.png)
+
+After SMOTE 
+![newplot(1)](https://user-images.githubusercontent.com/70576587/149510178-880e9211-9a0c-473d-a581-54f9fc468648.png)
+
+
 ## Clustering Graphs
 ![Clustering](https://user-images.githubusercontent.com/70576587/149420560-79f21de9-d266-41d7-91f6-22fc08f28648.png)
 ```
