@@ -1,4 +1,4 @@
-# Wine Quality
+# [Wine Quality](http://www3.dsi.uminho.pt/pcortez/wine/)
 Using the wine quality dataset do the classification, regression, clustering and dimensionality reduction.
 
 
@@ -13,7 +13,7 @@ Using the wine quality dataset do the classification, regression, clustering and
 </p>
 
 ### Train set
-Since the model was having difficulties predicting classes with a low number of samples SMOTE was used with the Random Forest classification, but it's accuracy was worse than the normal Random Forest classification with the original train set.
+Since the model was having difficulties predicting classes with a low number of samples, SMOTE was used with the Random Forest classification, but it's accuracy was worse than the normal Random Forest classification with the original train set.
 
 Create a new training set using SMOTE(Synthetic Minority Over-Sampling).
 The algorithm creates synthetic minority class samples to increase the representation of minority classes.
