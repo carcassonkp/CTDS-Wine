@@ -48,3 +48,28 @@ Mean shift
 Gaussian mixture
   accuracy                           0.20      1599
 ```
+## Dimensionality Reduction
+
+### PCA
+
+Accuracies for the Random Forest Classifier after applying PCA.
+
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/70576587/149518888-63f82207-f68e-43e1-86d0-dfa15b6a5c57.png"> 
+</p>
+
+### KPCA
+
+Accuracies for the Random Forest Classifier after applying KPCA.
+
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/70576587/149521060-cce356e7-4edb-401a-9f97-811e59acfea9.png"> 
+</p>
+
+### LDA
+
+Accuracies for the Random Forest Classifier after applying LDA.
+
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/70576587/149521113-e4b409e1-7492-45b8-8c9a-268c7e2f7772.png"> 
+</p>
